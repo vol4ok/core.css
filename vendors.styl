@@ -173,6 +173,61 @@ box-flex()
 box-flex-group()
   -webkit-box-flex-group: arguments
 
+flex()
+  -moz-box-flex: arguments
+  -webkit-box-flex: arguments
+  -webkit-flex: arguments
+  -ms-flex: arguments
+  flex: arguments
+
+flex-wrap()
+  -webkit-flex-wrap: arguments
+  -moz-flex-wrap: arguments
+  flex-wrap: arguments
+
+flex-shrink()
+  -webkit-flex-shrink: arguments
+  -moz-flex-shrink: arguments
+  flex-shrink: arguments
+
+flex-direction()
+  -webkit-flex-direction: arguments
+  -moz-flex-direction: arguments
+  flex-direction: arguments
+
+flex-grow()
+  -webkit-flex-grow: arguments
+  -moz-flex-grow: arguments
+  flex-grow: arguments
+
+flex-direction()
+  -webkit-flex-direction: arguments
+  -moz-flex-direction: arguments
+  flex-direction: arguments
+
+justify-content()
+  -webkit-justify-content: arguments
+  -moz-justify-content: arguments
+  justify-content: arguments
+
+align-self()
+  -webkit-align-self: arguments
+  -moz-align-self: arguments
+  align-self: arguments
+
+align-items($arg)
+  if $arg is start
+    $t = flex-start
+  else if $arg is flex-end
+    $t = flex-end
+  else
+    $t = $arg
+  -moz-box-flex: $t
+  -webkit-box-flex: $t
+  -webkit-align-items: arguments
+  -moz-align-items: arguments
+  align-items: arguments
+
 box-lines()
   -webkit-box-lines: arguments
   -ms-box-lines: arguments
